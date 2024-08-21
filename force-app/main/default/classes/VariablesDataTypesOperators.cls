@@ -35,10 +35,12 @@ public with sharing class VariablesDataTypesOperators {
 
         Integer result;
 
-        if (a == null || b == null)
+        if (a == null || b == null) {
             result = null;
-        else
+        }
+        else {
             result = a + b;
+        }
 
         return result; // Replace null with the variable you used to store the result
     }
@@ -82,10 +84,12 @@ public with sharing class VariablesDataTypesOperators {
         
         Integer result;
 
-        if (b == 0)
+        if (b == 0) {
             result = 0;
-        else
+        }
+        else {
             result = a/b;                
+        }
         
         return result; // Replace null with the variable you used to store the result
     }
@@ -185,7 +189,8 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
         
-        final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
+        final Integer MILLISECONDS_PER_MINUTE; // Make this value a constant
+        MILLISECONDS_PER_MINUTE = 60000;
         Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds; // Replace null with the variable you used to store the result
     }    
