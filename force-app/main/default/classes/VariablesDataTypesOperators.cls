@@ -22,6 +22,9 @@
  */
 
 public with sharing class VariablesDataTypesOperators {
+
+    static final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
+
     /**
      * Question 1
      * Performs addition of two numbers.
@@ -189,7 +192,6 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
         
-        static final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
         Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds; // Replace null with the variable you used to store the result
     }    
