@@ -90,7 +90,7 @@ public with sharing class VariablesDataTypesOperators {
         else {
             result = a/b;                
         }
-        
+
         return result; // Replace null with the variable you used to store the result
     }
 
@@ -189,8 +189,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
         
-        final Integer MILLISECONDS_PER_MINUTE; // Make this value a constant
-        MILLISECONDS_PER_MINUTE = 60000;
+        static final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
         Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds; // Replace null with the variable you used to store the result
     }    
